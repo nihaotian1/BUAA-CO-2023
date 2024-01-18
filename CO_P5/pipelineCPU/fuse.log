@@ -1,0 +1,45 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -nodebug -prj mips.prj -o mips.exe tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "W.v" into library work
+Analyzing Verilog file "NPC.v" into library work
+Analyzing Verilog file "MFSCU.v" into library work
+Analyzing Verilog file "M.v" into library work
+Analyzing Verilog file "IFU.v" into library work
+Analyzing Verilog file "GRF.v" into library work
+Analyzing Verilog file "EXT.v" into library work
+Analyzing Verilog file "E.v" into library work
+Analyzing Verilog file "DM.v" into library work
+Analyzing Verilog file "D.v" into library work
+Analyzing Verilog file "Controller.v" into library work
+Analyzing Verilog file "CMP.v" into library work
+Analyzing Verilog file "ALU.v" into library work
+Analyzing Verilog file "mips.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "mips.v" Line 223: Port RegWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "mips.v" Line 290: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "mips.v" Line 328: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "mips.v" Line 366: Port NPCOp is not connected to this instance
+Completed static elaboration
+Compiling module MFSCU
+Compiling module IFU
+Compiling module D
+Compiling module Controller
+Compiling module NPC
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module E
+Compiling module ALU
+Compiling module M
+Compiling module DM
+Compiling module W
+Compiling module mips
+Compiling module tb
+Time Resolution for simulation is 1ps.
+Compiled 15 Verilog Units
+Built simulation executable mips.exe
+Fuse Memory Usage: 32336 KB
+Fuse CPU Usage: 155 ms

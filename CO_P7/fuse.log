@@ -1,0 +1,60 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/CO/CO_P7/mips_auto_txt_isim_beh.exe -prj D:/CO/CO_P7/mips_auto_txt_beh.prj work.mips_auto_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CO/CO_P7/W.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/NPC.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/MultDiv.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/MFSCU.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/M.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/IFU.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/GRF.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/EXT.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/E.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/DP.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/D.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/CP0.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/Controller.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/CMP.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/BE.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/ALU.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/TC.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/cpu.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/Bridge.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/mips.v" into library work
+Analyzing Verilog file "D:/CO/CO_P7/mips_auto_txt.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/CO/CO_P7/cpu.v" Line 327: Port RegWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/CO_P7/cpu.v" Line 417: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/CO_P7/cpu.v" Line 492: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/CO/CO_P7/cpu.v" Line 571: Port NPCOp is not connected to this instance
+Completed static elaboration
+Compiling module TC
+Compiling module MFSCU
+Compiling module IFU
+Compiling module D
+Compiling module Controller
+Compiling module NPC
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module E
+Compiling module ALU
+Compiling module MultDiv
+Compiling module M
+Compiling module BE
+Compiling module DP
+Compiling module CP0
+Compiling module W
+Compiling module cpu
+Compiling module Bridge
+Compiling module mips
+Compiling module mips_auto_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 22 Verilog Units
+Built simulation executable D:/CO/CO_P7/mips_auto_txt_isim_beh.exe
+Fuse Memory Usage: 35288 KB
+Fuse CPU Usage: 187 ms

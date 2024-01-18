@@ -1,0 +1,12 @@
+# test for ECL
+.text
+li $1, 3
+mtc0 $1, $12
+nop
+sw $0, 1($0)
+beq $0, $0, end
+nop
+nop
+nop
+end:
+nop

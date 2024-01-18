@@ -1,0 +1,372 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\W.v" into library work
+Parsing module <W>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\NPC.v" into library work
+Parsing module <NPC>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\MFSCU.v" into library work
+Parsing verilog file "head.v" included at line 2.
+Parsing module <MFSCU>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\M.v" into library work
+Parsing module <M>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\IFU.v" into library work
+Parsing module <IFU>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\EXT.v" into library work
+Parsing verilog file "head.v" included at line 2.
+Parsing module <EXT>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\E.v" into library work
+Parsing module <E>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\DM.v" into library work
+Parsing module <DM>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\D.v" into library work
+Parsing module <D>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\Controller.v" into library work
+Parsing verilog file "head.v" included at line 13.
+Parsing module <Controller>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\CMP.v" into library work
+Parsing verilog file "head.v" included at line 3.
+Parsing module <CMP>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\ALU.v" into library work
+Parsing verilog file "head.v" included at line 2.
+Parsing module <ALU>.
+Analyzing Verilog file "D:\CO\CO_P5\pipelineCPU\mips.v" into library work
+Parsing verilog file "head.v" included at line 2.
+Parsing module <mips>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\CO\CO_P5\pipelineCPU\mips.v" Line 223: Port RegWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\CO\CO_P5\pipelineCPU\mips.v" Line 290: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\CO\CO_P5\pipelineCPU\mips.v" Line 328: Port NPCOp is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\CO\CO_P5\pipelineCPU\mips.v" Line 366: Port NPCOp is not connected to this instance
+
+Elaborating module <mips>.
+
+Elaborating module <MFSCU>.
+
+Elaborating module <IFU>.
+Reading initialization file \"code.txt\".
+WARNING:HDLCompiler:1670 - "D:\CO\CO_P5\pipelineCPU\IFU.v" Line 38: Signal <IM> in initial block is partially initialized.
+
+Elaborating module <D>.
+
+Elaborating module <Controller>.
+
+Elaborating module <NPC>.
+
+Elaborating module <GRF>.
+"D:\CO\CO_P5\pipelineCPU\GRF.v" Line 57. $display  32'b................................ 5'b..... 32'b................................
+
+Elaborating module <EXT>.
+
+Elaborating module <CMP>.
+
+Elaborating module <E>.
+
+Elaborating module <ALU>.
+
+Elaborating module <M>.
+WARNING:HDLCompiler:413 - "D:\CO\CO_P5\pipelineCPU\M.v" Line 61: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <DM>.
+"D:\CO\CO_P5\pipelineCPU\DM.v" Line 49. $display  32'b................................ 32'b................................ 32'b................................
+
+Elaborating module <W>.
+WARNING:HDLCompiler:413 - "D:\CO\CO_P5\pipelineCPU\W.v" Line 61: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 173. All outputs of instance <myMFSCU> of block <MFSCU> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 199. All outputs of instance <myIFU> of block <IFU> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 210. All outputs of instance <myD> of block <D> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223. All outputs of instance <D_CU> of block <Controller> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 233. All outputs of instance <myNPC> of block <NPC> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 244. All outputs of instance <myGRF> of block <GRF> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 257. All outputs of instance <myEXT> of block <EXT> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 263. All outputs of instance <myCMP> of block <CMP> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 272. All outputs of instance <myE> of block <E> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290. All outputs of instance <E_CU> of block <Controller> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 301. All outputs of instance <myALU> of block <ALU> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 310. All outputs of instance <myM> of block <M> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328. All outputs of instance <M_CU> of block <Controller> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 337. All outputs of instance <myDM> of block <DM> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 349. All outputs of instance <myW> of block <W> are unconnected in block <mips>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366. All outputs of instance <W_CU> of block <Controller> are unconnected in block <mips>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mips>.
+    Related source file is "D:\CO\CO_P5\pipelineCPU\mips.v".
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <RegSrc> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <RegDst> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <ALUOp> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <Tnew> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <RegWrite> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <ALUSrc> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 223: Output port <MemWrite> of the instance <D_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <NPCOp> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <EXTOp> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <CMPOp> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <Tuse_RS> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <Tuse_RT> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 290: Output port <MemWrite> of the instance <E_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <NPCOp> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <EXTOp> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <CMPOp> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <ALUOp> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <Tnew> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <Tuse_RS> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <Tuse_RT> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 328: Output port <ALUSrc> of the instance <M_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <NPCOp> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <EXTOp> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <CMPOp> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <ALUOp> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <Tnew> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <Tuse_RS> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <Tuse_RT> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <ALUSrc> of the instance <W_CU> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\CO\CO_P5\pipelineCPU\mips.v" line 366: Output port <MemWrite> of the instance <W_CU> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mips> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mips.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.82 secs
+ 
+--> 
+
+Total memory usage is 5636732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :   30 (   0 filtered)
+

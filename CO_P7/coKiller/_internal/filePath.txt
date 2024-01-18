@@ -1,0 +1,3 @@
+D:\CO\CO_P7
+C:/Xilinx/14.7/ISE_DS/ISE/
+D:\CO\CO_P7\coKiller\res

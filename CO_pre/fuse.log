@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/CO/CO_pre/tb_cpu_checker_isim_beh.exe -prj D:/CO/CO_pre/tb_cpu_checker_beh.prj work.tb_cpu_checker work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/CO/CO_pre/cpu_checker.v" into library work
+Analyzing Verilog file "D:/CO/CO_pre/tb_cpu_checker.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ishex
+Compiling module isdec
+Compiling module char2hex
+Compiling module pccheck
+Compiling module addrcheck
+Compiling module grfcheck
+Compiling module timecheck
+Compiling module cpu_checker
+Compiling module tb_cpu_checker
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable D:/CO/CO_pre/tb_cpu_checker_isim_beh.exe
+Fuse Memory Usage: 32184 KB
+Fuse CPU Usage: 108 ms

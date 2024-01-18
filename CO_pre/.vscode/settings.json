@@ -1,0 +1,5 @@
+{
+    "verilog.ctags.path": "D:\\ctags-p6.0.20230813.0-x64\\ctags.exe",
+    "verilog.linting.linter": "xvlog",
+    "maven.terminal.useJavaHome": true
+}

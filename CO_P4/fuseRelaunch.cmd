@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/CO/CO_P4/mips_cpu_tb_isim_beh.exe" -prj "D:/CO/CO_P4/mips_cpu_tb_beh.prj" "work.mips_cpu_tb" "work.glbl" 

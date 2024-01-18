@@ -1,0 +1,62 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -nodebug -prj mips.prj -o mips.exe generated_mips_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:\CO\CO_P7/ALU.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/BE.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/Bridge.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/CMP.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/Controller.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/CP0.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/cpu.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/D.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/DP.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/E.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/EXT.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/generated_mips_test.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/GRF.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/head.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/IFU.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/M.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/MFSCU.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/mips.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/mips_auto_txt.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/mips_tb.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/mips_txt.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/MultDiv.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/NPC.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/TC.v" into library work
+Analyzing Verilog file "D:\CO\CO_P7/W.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module TC
+Compiling module MFSCU
+Compiling module IFU
+Compiling module D
+Compiling module Controller
+Compiling module NPC
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module E
+Compiling module ALU
+Compiling module MultDiv
+Compiling module M
+Compiling module BE
+Compiling module DP
+Compiling module CP0
+Compiling module W
+Compiling module cpu
+Compiling module Bridge
+Compiling module mips
+Compiling module generated_mips_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable mips.exe
+Fuse Memory Usage: 34848 KB
+Fuse CPU Usage: 468 ms
+Warning: VC++ 2008 runtime libraries are not installed.
+Please install the runtime libraries by running the redistributable {Install Root Dir}\common\bin\nt64\vcredist_x64.exe from the installed area.
+You will need to have adminstrative privilege to run VC++ 2008 Redistributable.

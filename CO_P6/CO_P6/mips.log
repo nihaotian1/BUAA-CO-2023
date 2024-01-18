@@ -1,0 +1,48 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -nodebug -prj mips.prj -o mips.exe mips_txt 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "../W.v" into library work
+Analyzing Verilog file "../NPC.v" into library work
+Analyzing Verilog file "../MultDiv.v" into library work
+Analyzing Verilog file "../MFSCU.v" into library work
+Analyzing Verilog file "../M.v" into library work
+Analyzing Verilog file "../IFU.v" into library work
+Analyzing Verilog file "../GRF.v" into library work
+Analyzing Verilog file "../EXT.v" into library work
+Analyzing Verilog file "../E.v" into library work
+Analyzing Verilog file "../DP.v" into library work
+Analyzing Verilog file "../D.v" into library work
+Analyzing Verilog file "../Controller.v" into library work
+Analyzing Verilog file "../CMP.v" into library work
+Analyzing Verilog file "../BE.v" into library work
+Analyzing Verilog file "../ALU.v" into library work
+Analyzing Verilog file "../mips.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module MFSCU
+Compiling module IFU
+Compiling module D
+Compiling module Controller
+Compiling module NPC
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module E
+Compiling module ALU
+Compiling module MultDiv
+Compiling module M
+Compiling module BE
+Compiling module DP
+Compiling module W
+Compiling module mips
+Compiling module mips_txt
+Time Resolution for simulation is 1ps.
+Compiled 17 Verilog Units
+Built simulation executable mips.exe
+Fuse Memory Usage: 33392 KB
+Fuse CPU Usage: 140 ms
+Warning: VC++ 2008 runtime libraries are not installed.
+Please install the runtime libraries by running the redistributable {Install Root Dir}\common\bin\nt64\vcredist_x64.exe from the installed area.
+You will need to have adminstrative privilege to run VC++ 2008 Redistributable.

@@ -1,0 +1,1504 @@
+{
+    "forward_valid_ratio": 0.8902147971360382,
+    "forward_count": 203,
+    "stall_count": 37,
+    "forward_coverage": 0.19594594594594594,
+    "stall_coverage": 0.33636363636363636,
+    "grade": {
+        "forward": {
+            "average": 59.34200157604412,
+            "warning": [
+                "cal_ri <~~ load",
+                "br_r2 <~~ jal",
+                "mv_to <~~ lui",
+                "load <~~ cal_ri",
+                "jr <~~ cal_rr",
+                "jr <~~ cal_ri",
+                "jr <~~ mv_fr",
+                "jr <~~ load"
+            ],
+            "details": {
+                "cal_rr <~~ cal_rr": 68.14814814814815,
+                "cal_rr <~~ cal_ri": 65.92592592592592,
+                "cal_rr <~~ mv_fr": 72.22222222222223,
+                "cal_rr <~~ load": 66.66666666666667,
+                "cal_rr <~~ lui": 75.55555555555556,
+                "cal_rr <~~ jal": 75.55555555555556,
+                "cal_ri <~~ cal_rr": 62.96296296296296,
+                "cal_ri <~~ cal_ri": 61.48148148148148,
+                "cal_ri <~~ mv_fr": 62.22222222222222,
+                "cal_ri <~~ load": 0,
+                "cal_ri <~~ lui": 73.33333333333333,
+                "cal_ri <~~ jal": 68.88888888888889,
+                "br_r2 <~~ cal_rr": 83.33333333333334,
+                "br_r2 <~~ cal_ri": 63.333333333333336,
+                "br_r2 <~~ mv_fr": 90.0,
+                "br_r2 <~~ load": 73.33333333333333,
+                "br_r2 <~~ lui": 100.0,
+                "br_r2 <~~ jal": 0,
+                "mv_to <~~ cal_rr": 63.333333333333336,
+                "mv_to <~~ cal_ri": 62.22222222222222,
+                "mv_to <~~ mv_fr": 73.33333333333333,
+                "mv_to <~~ load": 73.33333333333333,
+                "mv_to <~~ lui": 0,
+                "mv_to <~~ jal": 86.66666666666666,
+                "load <~~ cal_rr": 62.96296296296296,
+                "load <~~ cal_ri": 0,
+                "load <~~ mv_fr": 62.22222222222222,
+                "load <~~ load": 66.66666666666667,
+                "load <~~ lui": 73.33333333333333,
+                "load <~~ jal": 64.44444444444444,
+                "store <~~ cal_rr": 73.33333333333333,
+                "store <~~ cal_ri": 64.44444444444444,
+                "store <~~ mv_fr": 73.33333333333333,
+                "store <~~ load": 74.81481481481481,
+                "store <~~ lui": 73.33333333333333,
+                "store <~~ jal": 86.66666666666666,
+                "mul_div <~~ cal_rr": 64.44444444444444,
+                "mul_div <~~ cal_ri": 62.22222222222222,
+                "mul_div <~~ mv_fr": 66.66666666666667,
+                "mul_div <~~ load": 65.0,
+                "mul_div <~~ lui": 83.33333333333334,
+                "mul_div <~~ jal": 70.0,
+                "jr <~~ cal_rr": 0,
+                "jr <~~ cal_ri": 0,
+                "jr <~~ mv_fr": 0,
+                "jr <~~ load": 0,
+                "jr <~~ jal": 80.0
+            }
+        },
+        "stall": {
+            "average": 50.476190476190474,
+            "warning": [
+                "cal_ri <~~ load",
+                "jr <~~ cal_rr",
+                "jr <~~ cal_ri",
+                "jr <~~ mv_fr",
+                "jr <~~ load"
+            ],
+            "details": {
+                "cal_rr <~~ load": 68.88888888888889,
+                "cal_ri <~~ load": 0,
+                "br_r2 <~~ cal_rr": 90.0,
+                "br_r2 <~~ cal_ri": 73.33333333333333,
+                "br_r2 <~~ mv_fr": 100.0,
+                "br_r2 <~~ load": 83.33333333333334,
+                "mv_to <~~ load": 73.33333333333333,
+                "load <~~ load": 73.33333333333333,
+                "store <~~ load": 77.77777777777777,
+                "mul_div <~~ load": 66.66666666666667,
+                "jr <~~ cal_rr": 0,
+                "jr <~~ cal_ri": 0,
+                "jr <~~ mv_fr": 0,
+                "jr <~~ load": 0
+            }
+        }
+    },
+    "forward": [
+        {
+            "src_instr": "add",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "bne",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "lb",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "sub",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "add",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addi",
+            "dst_instr": "divu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addi",
+            "dst_instr": "mthi",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "addi",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addi",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "addi",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "and",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "andi",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "andi",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "andi",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "andi",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "andi",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "add",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "and",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "andi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "div",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "jr",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "lw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "mthi",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "mthi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "mtlo",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "mtlo",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "mult",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "ori",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sb",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sb",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sh",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "slt",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sltu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sub",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sw",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "jal",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "bne",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "lb",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "mthi",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "mtlo",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "mult",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "M"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sh",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lb",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lh",
+            "dst_instr": "lb",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lh",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lh",
+            "dst_instr": "sh",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lh",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lh",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "add",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "and",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "andi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "andi",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "bne",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "bne",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "divu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "lb",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "lb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "lh",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "mult",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "mult",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "mult",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "multu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "multu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "or",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "ori",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sb",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "slt",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sltu",
+            "src_stage": "E",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lui",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "lb",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "mthi",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "mtlo",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "mult",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "multu",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "M"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "lw",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "andi",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "bne",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "lh",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "mthi",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "mtlo",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "mtlo",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "mult",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "mult",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mfhi",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "and",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "mtlo",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sb",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sh",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "mflo",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "andi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "lh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "sb",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "or",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "addi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "ori",
+            "dst_instr": "sub",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "addi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "and",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "and",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "andi",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "bne",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "divu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "lb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "mtlo",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "mtlo",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "mult",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "multu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "or",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sb",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sh",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sltu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "slt",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "add",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "addi",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "and",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "and",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "beq",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "div",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "divu",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "lh",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "multu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "or",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sb",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sb",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "slt",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sw",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sltu",
+            "dst_instr": "sw",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "beq",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "bne",
+            "src_stage": "M",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "divu",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "mtlo",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "sh",
+            "src_stage": "M",
+            "dst_stage": "E"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "slt",
+            "src_stage": "W",
+            "dst_stage": "D"
+        },
+        {
+            "src_instr": "sub",
+            "dst_instr": "sltu",
+            "src_stage": "M",
+            "dst_stage": "E"
+        }
+    ],
+    "stall": [
+        {
+            "d_instr": "beq",
+            "cause": "add",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "add",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "and",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "andi",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lb",
+            "interval": 1
+        },
+        {
+            "d_instr": "bne",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "lb",
+            "interval": 1
+        },
+        {
+            "d_instr": "lb",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "mthi",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "sb",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "sh",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "slt",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "sltu",
+            "cause": "lb",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lh",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lh",
+            "interval": 1
+        },
+        {
+            "d_instr": "lb",
+            "cause": "lh",
+            "interval": 0
+        },
+        {
+            "d_instr": "sh",
+            "cause": "lh",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "lw",
+            "interval": 1
+        },
+        {
+            "d_instr": "divu",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "lb",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "mthi",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "multu",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "slt",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "sltu",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "sw",
+            "cause": "lw",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "mfhi",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "mfhi",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "mflo",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "mflo",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "or",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "ori",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "slt",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "slt",
+            "interval": 0
+        },
+        {
+            "d_instr": "beq",
+            "cause": "sltu",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "sltu",
+            "interval": 0
+        },
+        {
+            "d_instr": "bne",
+            "cause": "sub",
+            "interval": 0
+        }
+    ]
+}

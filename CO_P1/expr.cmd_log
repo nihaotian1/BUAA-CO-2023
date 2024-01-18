@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/CO/CO_P1/expr.xst" -ofn "D:/CO/CO_P1/expr.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 expr.ngc expr.ngd  
